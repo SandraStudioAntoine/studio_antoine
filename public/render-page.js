@@ -11450,24 +11450,24 @@ module.exports = withSideEffect;
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*************************************************************************************************************!*\
-  !*** external "/Users/mhp/Documents/Projects/antoine/site/studio-antoine/node_modules/react-dom/server.js" ***!
-  \*************************************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** external "/Users/mhp/Documents/Projects/antoine/gatsby_app/studio_antoine/node_modules/react-dom/server.js" ***!
+  \*******************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/mhp/Documents/Projects/antoine/site/studio-antoine/node_modules/react-dom/server.js");
+module.exports = require("/Users/mhp/Documents/Projects/antoine/gatsby_app/studio_antoine/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!********************************************************************************************************!*\
-  !*** external "/Users/mhp/Documents/Projects/antoine/site/studio-antoine/node_modules/react/index.js" ***!
-  \********************************************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** external "/Users/mhp/Documents/Projects/antoine/gatsby_app/studio_antoine/node_modules/react/index.js" ***!
+  \**************************************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("/Users/mhp/Documents/Projects/antoine/site/studio-antoine/node_modules/react/index.js");
+module.exports = require("/Users/mhp/Documents/Projects/antoine/gatsby_app/studio_antoine/node_modules/react/index.js");
 
 /***/ }),
 
