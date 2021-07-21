@@ -604,6 +604,14 @@ pre tt:after {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'ogg';
+    src: url('../fonts/Ogg-Regular.woff2') format('woff2'),
+         url('../fonts/Ogg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 header ul {
   font-family: 'relativebook';
   list-style: none;
@@ -629,4 +637,22 @@ header ul li a {
   color: #212121;
   margin: 0;
   padding: 0;
+}
+
+.item .featured {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.item:hover .featured {
+  opacity: 0.1;
+}
+
+.item h2, .item h3 {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.item:hover h2, .item:hover h3 {
+  opacity: 1;
 }
