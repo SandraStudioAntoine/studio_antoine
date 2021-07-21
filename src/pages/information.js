@@ -36,6 +36,7 @@ const Information = () => (
             top: `20px`,
             left: `20px`,
             width: `175px`,
+            margin: `0`,
           }}
         />
         <p
@@ -43,7 +44,8 @@ const Information = () => (
             position: `relative`,
             left: `20px`,
             width: `calc(25vw - 40px)`,
-            marginTop: `20px`,
+            margin: `0`,
+            marginTop: `30px`,
             fontFamily: `relativebook`,
             fontSize: `12px`,
             lineHeight: `18px`,
@@ -57,6 +59,7 @@ const Information = () => (
             left: `20px`,
             width: `calc(25vw - 40px)`,
             marginTop: `20px`,
+            marginBottom: `20px`,
             fontFamily: `relativebook`,
             fontSize: `12px`,
             lineHeight: `18px`,
