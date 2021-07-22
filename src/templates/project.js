@@ -29,6 +29,7 @@ const Project = props => {
     arrows: false,
     dots: true,
     centerMode: true,
+    autoplay: true,
   };
 
   return (
