@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HomeVid from "../images/inicio.mp4"
+import WordImg from "../images/wordmark.svg"
 
 const IndexPage = () => {
   const data = useStaticQuery(
@@ -146,6 +147,27 @@ const IndexPage = () => {
             )
           })}
         </div>
+        <div
+            style={{
+              position: `absolute`,
+              bottom: `0`,
+              right: `0`,
+              width: `50vw`,
+              height: `25vw`,
+            }}
+          >
+            <img 
+              src={WordImg}
+              alt="Studio Antoine Logo"
+              style={{
+                position: `relative`,
+                top: `50%`,
+                left: `50%`,
+                width: `20vw`,
+                transform: `translate(-50%,-50%)`,
+              }}
+            />
+          </div>
       </div>
     </Layout>
   )

@@ -4,6 +4,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import WordImg from "../images/wordmark.svg"
+
 
 const Projects = () => {
   const data = useStaticQuery(
@@ -113,6 +115,27 @@ const Projects = () => {
             )
           })}
         </div>
+        <div
+            style={{
+              position: `absolute`,
+              bottom: `0`,
+              right: `0`,
+              width: `50vw`,
+              height: `25vw`,
+            }}
+          >
+            <img 
+              src={WordImg}
+              alt="Studio Antoine Logo"
+              style={{
+                position: `relative`,
+                top: `50%`,
+                left: `50%`,
+                width: `20vw`,
+                transform: `translate(-50%,-50%)`,
+              }}
+            />
+          </div>
       </div>
     </Layout>
   )
