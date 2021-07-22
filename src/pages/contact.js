@@ -84,6 +84,19 @@ const Contact = () => (
           >hello@studioantoine.com</a>
         </p>
       </div>
+      <iframe
+        style={{
+          border: `none`,
+          width: `75vw`,
+          height: `calc(100vh - 80px)`,
+          position: `fixed`,
+          top: `80px`,
+          right: `0`,
+        }}
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDi8Ijv1DcNQeOB9QoU-Lln_jot0CzdxJE&q=Space+Needle,Seattle+WA">
+      </iframe>
     </div>
   </Layout>
 )
