@@ -22,16 +22,12 @@ export const query = graphql`
 
 const Project = props => {
   const settings = {
-    dots: false,
     infinite: true,
     speed: 1000,
-    autoplaySpeed: 3000,
-    fadeIn: false,
-    autoplay: false,
-    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    dots: false,
     centerMode: true,
   };
 
@@ -50,11 +46,13 @@ const Project = props => {
         <div className="content">
           <Slider {...settings}>
             {props.data.contentfulProject.images.map(({ fluid, id }) => (
-              <Img
-                key={id}
-                fluid={fluid}
-                className="images"
-              />
+              <div className="img-wrapper">
+                <Img
+                  key={id}
+                  fluid={fluid}
+                  className="slider-img"
+                />
+              </div>
             ))}
           </Slider>
           <h2

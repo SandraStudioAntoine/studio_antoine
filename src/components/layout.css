@@ -666,31 +666,29 @@ header ul li a {
 
 .slick-slider {
   width: 100vw;
-  background-color: green;
+  height: calc(100vh - 120px);
+  margin-top: 20px;
 }
 
 .slick-track {
-  display: flex !important;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: calc(100vh - 100px);
-  justify-content: center;
-  background-color: blue;
-}
-  
-.slick-slide {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
-  padding: 0;
-  background-color: yellow;
-  transition: all 0.3s ease;
-  height: inherit !important;
-  object-fit: contain;
+
 }
 
-.slick-current, .slick-center {
-  background-color: red;
+.img-wrapper, .slider-img {
+  position: relative;
+  height: calc(100vh - 120px);
+  width: calc(100vw - 240px);
+  margin-left: 35px;
+}
+
+.slider-img img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%);
+  object-fit: contain !important;
 }
 
 
