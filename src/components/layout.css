@@ -663,3 +663,34 @@ header ul li a {
 .item-link:nth-of-type(even) {
   display: none;
 }
+
+.slick-slider {
+  width: 100vw;
+  background-color: green;
+}
+
+.slick-track {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  background-color: blue;
+}
+  
+.slick-slide {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  background-color: yellow;
+  transition: all 0.3s ease;
+  height: inherit !important;
+  object-fit: contain;
+}
+
+.slick-current, .slick-center {
+  background-color: red;
+}
+
+

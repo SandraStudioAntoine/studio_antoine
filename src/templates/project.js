@@ -22,53 +22,70 @@ export const query = graphql`
 
 const Project = props => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
     autoplaySpeed: 3000,
     fadeIn: false,
-    autoplay: true,
+    autoplay: false,
     pauseOnHover: false,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    arrows: false,
+    centerMode: true,
   };
 
   return (
     <Layout>
       <SEO title={props.data.contentfulProject.projectTitle} />
-      <Link to="/projects/">Projects</Link>
-      <div className="content">
-        <h1>{props.data.contentfulProject.projectTitle}</h1>
+      <div
+        style={{
+          position: `absolute`,
+          top: `80px`,
+          left: `0`,
+          minHeight: `calc(100vh - 80px)`,
+          width: `100vw`,
+        }}
+      >
+        <div className="content">
           <Slider {...settings}>
             {props.data.contentfulProject.images.map(({ fluid, id }) => (
               <Img
-            key={id}
-            fluid={fluid}
-            className="images"
-          />
+                key={id}
+                fluid={fluid}
+                className="images"
+              />
             ))}
           </Slider>
-
-          
-
+          <h2
+            style={{
+              position: `fixed`,
+              left: `20px`,
+              bottom: `42px`,
+              fontSize: `16px`,
+              fontFamily: `ogg`,
+              color: `#212121`,
+              margin: `0`,
+              fontWeight: `normal`,
+            }}
+          >
+            {props.data.contentfulProject.projectTitle}
+          </h2>
+          <h3
+            style={{
+              position: `fixed`,
+              left: `20px`,
+              bottom: `20px`,
+              fontSize: `12px`,
+              fontFamily: `relativebook`,
+              color: `#212121`,
+              margin: `0`,
+              fontWeight: `normal`,
+            }}
+          >
+            {props.data.contentfulProject.location}
+          </h3>
+        </div>
       </div>
     </Layout>
   )
