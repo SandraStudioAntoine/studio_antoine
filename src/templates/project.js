@@ -27,7 +27,7 @@ const Project = props => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    dots: false,
+    dots: true,
     centerMode: true,
   };
 
