@@ -44,6 +44,7 @@ const Projects = () => {
           {data.allContentfulProject.edges.map(edge => {
             return (
               <Link
+                className="item-link"
                 to={`/projects/${edge.node.slug}/`}
                 style={{
                   position: `relative`,

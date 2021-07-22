@@ -656,3 +656,7 @@ header ul li a {
 .item:hover h2, .item:hover h3 {
   opacity: 1;
 }
+
+.item-link:nth-of-type(even) {
+  display: none;
+}
