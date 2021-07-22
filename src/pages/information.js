@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import WordImg from "../images/wordmark.svg"
-import InfoImg from "../images/info-img.jpg"
+import InfoImg from "../images/about-img.jpg"
 
 const Information = () => (
   <Layout>
@@ -43,7 +43,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `20px`,
-            width: `calc(25vw - 40px)`,
+            width: `calc(50vw - 40px)`,
             margin: `0`,
             marginTop: `30px`,
             fontFamily: `relativebook`,
@@ -51,13 +51,13 @@ const Information = () => (
             lineHeight: `18px`,
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum finibus ipsum non condimentum. Ut a pellentesque metus. Suspendisse pellentesque mattis sagittis. Nulla facilisi. Proin tellus lacus, iaculis et lacus vel, feugiat facilisis neque. Pellentesque tempus malesuada sapien ut malesuada. Donec ac fringilla tortor. Praesent eu felis non nisl molestie efficitur. Sed convallis pulvinar ex, quis eleifend orci aliquam eu. Curabitur auctor ut risus sed dictum. Suspendisse sit amet efficitur risus, id ultrices libero. Aliquam sit amet augue eu dui gravida pulvinar. Vivamus felis enim, dapibus sed vestibulum id, pretium nec ipsum. Praesent placerat nisl ac mauris imperdiet ornare. Suspendisse faucibus quam sed nibh interdum pharetra.
+          Antoine Ratigan who is half English and half French, has been living in Mexico for the past 10 years.  Born and raised in London where he studied Architecture, he moved to Paris in his early twenties to work in the world of Fashion where he finished being the worldwide merchandising director at Yves Saint Laurent headquarters in Paris now better known as SAINT LAURENT, a post he held with great success for 5 years at the luxury brand.
         </p>
         <p
           style={{
             position: `relative`,
             left: `20px`,
-            width: `calc(25vw - 40px)`,
+            width: `calc(50vw - 40px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `relativebook`,
@@ -65,7 +65,63 @@ const Information = () => (
             lineHeight: `18px`,
           }}
         >
-          Cras et ante ornare, sodales felis ac, laoreet tortor. Phasellus et efficitur quam. Quisque ullamcorper, nibh eu posuere tristique, lectus tellus posuere nibh, a dignissim urna nulla vel tortor. Duis lorem massa, egestas id accumsan vel, tempor vel leo. Donec cursus et velit eget gravida. Duis venenatis turpis vitae pharetra pulvinar. Nunc leo nunc, efficitur et lacus nec, lobortis scelerisque tortor. Sed ullamcorper ac mauris quis euismod. Aenean non lorem a sapien convallis luctus sed ac risus. Maecenas ut urna id erat luctus iaculis. Maecenas ut nibh at nulla tempus posuere. Donec quam lorem, eleifend sit amet lacus nec, scelerisque faucibus lacus. Pellentesque faucibus nunc urna, eget interdum dui dapibus a. Vivamus a varius diam, sit amet posuere diam. Cras aliquet dapibus eros eget commodo. Mauris eu pulvinar leo, eget ultrices nunc.
+          His discovery of Mexico proved to be life changing, as after falling in love with the Mexican culture as a whole and the country made him decide to make Mexico the place he now calls home for the past ten years.
+        </p>
+        <p
+          style={{
+            position: `relative`,
+            left: `20px`,
+            width: `calc(50vw - 40px)`,
+            marginTop: `20px`,
+            marginBottom: `20px`,
+            fontFamily: `relativebook`,
+            fontSize: `12px`,
+            lineHeight: `18px`,
+          }}
+        >
+          With his well travelled eye,  multi cultural heritage, his deep understanding of high end needs as a whole and his passions for architecture and design, Antoine Ratigan partnered up with Miguel Angel Aragones world renowned Mexican Architect to create a new hotel group in Mexico eight years ago called Grupo Encanto. Taking over and revamping The Hotel Encanto Acapulco became the number one hotel on tripadvisor over the Banyan Tree after only 6 months of rebranding and reinventing the experience for the guests. This gave them the boost to start on the full invention and creation of the Mar Adentro Hotel Cabos now the Viceroy Los Cabos. 
+        </p>
+        <p
+          style={{
+            position: `relative`,
+            left: `20px`,
+            width: `calc(50vw - 40px)`,
+            marginTop: `20px`,
+            marginBottom: `20px`,
+            fontFamily: `relativebook`,
+            fontSize: `12px`,
+            lineHeight: `18px`,
+          }}
+        >
+          Once this last property came to market Antoine Ratigan created his unique design and artistic direction agency specialized in commercial projects and private homes which offers his clients a one step experience on the complete project process. Aligning all his passions and experience, Studio Antoine offers a complete artistic direction, spanning from the architectural collaborations to the full interior design as well as the branding, marketing and operations of the properties and projects.
+        </p>
+        <p
+          style={{
+            position: `relative`,
+            left: `20px`,
+            width: `calc(50vw - 40px)`,
+            marginTop: `20px`,
+            marginBottom: `20px`,
+            fontFamily: `relativebook`,
+            fontSize: `12px`,
+            lineHeight: `18px`,
+          }}
+        >
+          His deep love and admiration of the Mexican hand and craft makes him endeavour to bespoke all details with one of the most creative portfolios this country can offer, creating and collaborating with the best architects, carpenters, ceramists, silversmiths, weavers, potters, muralists, branding agencies and the list continues, to deliver a project where all details are looked after but moreover where each detail has a story behind it making each project a book worth reading and discovering.
+        </p>
+        <p
+          style={{
+            position: `relative`,
+            left: `20px`,
+            width: `calc(50vw - 40px)`,
+            marginTop: `20px`,
+            marginBottom: `20px`,
+            fontFamily: `relativebook`,
+            fontSize: `12px`,
+            lineHeight: `18px`,
+          }}
+        >
+          Working with Antoine Ratigan makes you understand how amazing Mexico is on the creative and artistic scene and will definitely put your project on the map to living something different and profound to the core.
         </p>
       </div>
       <img 
@@ -76,9 +132,9 @@ const Information = () => (
           top: `80px`,
           right: `0`,
           height: `calc(100vh - 80px)`,
-          width: `75vw`,
+          width: `50vw`,
           objectFit: `cover`,
-          objectPosition: `0% 100%`,
+          objectPosition: `0% 0%`,
         }}
       />
     </div>
