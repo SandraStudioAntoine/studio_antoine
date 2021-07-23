@@ -86,7 +86,7 @@ const Projects = () => {
                     style={{
                       position: `absolute`,
                       left: `20px`,
-                      bottom: `42px`,
+                      top: `calc(50% - 10px)`,
                       fontSize: `16px`,
                       fontFamily: `ogg`,
                       color: `#212121`,
@@ -100,7 +100,7 @@ const Projects = () => {
                     style={{
                       position: `absolute`,
                       left: `20px`,
-                      bottom: `20px`,
+                      top: `calc(50% + 10px)`,
                       fontSize: `12px`,
                       fontFamily: `relativebook`,
                       color: `#212121`,

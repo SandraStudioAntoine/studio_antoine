@@ -43,28 +43,12 @@ const IndexPage = () => {
           background: `#ffffff`,
         }}
       >
-        <div
-          style={{
-            position: `relative`,
-            top: `0`,
-            left: `0`,
-            height: `calc(100vh - 80px)`,
-            width: `100vw`,
-            background: `#ffffff`,
-            overflow: `hidden`,
-          }}
-        >
+        <div className="home-video-wrapper">
           <video
+            className="home-video"
             autoplay="true"
             muted="true"
             src={HomeVid}
-            style={{
-              position: `absolute`,
-              top: `50%`,
-              left: `50%`,
-              width: `100vw`,
-              transform: `translate(-50%,-50%)`,
-            }}
           >
           </video>
         </div>
@@ -118,7 +102,7 @@ const IndexPage = () => {
                     style={{
                       position: `absolute`,
                       left: `20px`,
-                      bottom: `42px`,
+                      top: `calc(50% - 10px)`,
                       fontSize: `16px`,
                       fontFamily: `ogg`,
                       color: `#212121`,
@@ -132,7 +116,7 @@ const IndexPage = () => {
                     style={{
                       position: `absolute`,
                       left: `20px`,
-                      bottom: `20px`,
+                      top: `calc(50% + 10px)`,
                       fontSize: `12px`,
                       fontFamily: `relativebook`,
                       color: `#212121`,

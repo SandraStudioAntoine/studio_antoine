@@ -642,6 +642,30 @@ header ul li a {
   padding: 0;
 }
 
+.home-video-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-video-wrapper {
+    height: calc(900vw / 16);
+  }
+}
+
+.home-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%,-50%);
+}
+
 .item .featured {
   opacity: 1;
   transition: opacity 1s;
@@ -677,8 +701,8 @@ header ul li a {
 .img-wrapper, .slider-img {
   position: relative;
   height: calc(100vh - 120px);
-  width: calc(100vw - 240px);
-  margin-left: 35px;
+  width: calc(100vw - 120px);
+  margin-left: 10px;
 }
 
 .slider-img img {
