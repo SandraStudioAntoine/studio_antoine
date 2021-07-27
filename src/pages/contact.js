@@ -357,7 +357,7 @@ const Contact = () => {
         style={{
           position: `absolute`,
           top: `50%`,
-          left: `calc(80px + (25vw - 60px))`,
+          left: `calc(20px + (25vw - 15px))`,
           transform: `translate(-50%,-50%)`,
         }}
       >
@@ -418,11 +418,11 @@ const Contact = () => {
         className="mapGoogle"
         style={{
           border: `none`,
-          width: `calc(50vw - 120px)`,
-          height: `calc(100vh - 240px)`,
+          width: `calc(50vw - 30px)`,
+          height: `calc(100vh - 120px)`,
           position: `fixed`,
-          top: `160px`,
-          right: `80px`,
+          top: `100px`,
+          right: `20px`,
         }}
       >
         <GoogleMapReact
