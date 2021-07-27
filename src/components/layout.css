@@ -690,22 +690,22 @@ header ul li a {
   transition: opacity 1s;
 }
 
-@media(hover: hover) and (pointer: fine) {
+
   .item:hover .featured {
     opacity: 0.1;
   }
-}
+
 
 .item h2, .item h3 {
   opacity: 0;
   transition: opacity 1s;
 }
 
-@media(hover: hover) and (pointer: fine) {
+
   .item:hover h2, .item:hover h3 {
     opacity: 1;
   }
-}
+
 
 .item-link:nth-of-type(even) {
   display: none;
@@ -729,6 +729,7 @@ header ul li a {
     width: 100vw;
     height: 50vw;
     left: 0;
+    bottom: -50vw;
   }
 
   .placeholder-wrapper img {
@@ -739,6 +740,7 @@ header ul li a {
 @media only screen and (max-width: 500px) {
   .placeholder-wrapper {
     height: 100vw;
+    bottom: -100vw;
   }
 
   .placeholder-wrapper img {
