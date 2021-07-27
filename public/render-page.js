@@ -3101,7 +3101,7 @@ var plugins = [{
     "cache_busting_mode": "query",
     "crossOrigin": "anonymous",
     "include_favicon": true,
-    "cacheDigest": "a6896edafe9f4f9810b229320b352a34"
+    "cacheDigest": "205dff41bb8c9bfadc892b4251a8a0bb"
   }
 }];
 /* global plugins */

@@ -14,6 +14,7 @@ export const query = graphql`
         id
         fluid {
           ...GatsbyContentfulFluid
+          aspectRatio
         }
       }
     }
@@ -28,8 +29,11 @@ const Project = props => {
     slidesToScroll: 1,
     arrows: false,
     dots: true,
-    centerMode: true,
+    rows: 1,
     autoplay: true,
+    variableWidth: true,
+    centerMode: true,
+    accessibility: true,
   };
 
   return (
@@ -37,26 +41,32 @@ const Project = props => {
       <SEO title={props.data.contentfulProject.projectTitle} />
       <div
         style={{
-          position: `absolute`,
+          position: `fixed`,
           top: `80px`,
           left: `0`,
-          minHeight: `calc(100vh - 80px)`,
+          height: `calc(100vh - 80px)`,
           width: `100vw`,
         }}
       >
         <div className="content">
           <Slider {...settings}>
-            {props.data.contentfulProject.images.map(({ fluid, id }) => (
-              <div className="img-wrapper">
+            {props.data.contentfulProject.images.map(({ id, fluid }) => (
+              <div
+                className="img-wrapper"
+                key={id}
+                style={{
+                  height: `calc(100vh - 80px)`,
+                  width: `calc(${fluid.aspectRatio} * (100vh - 80px))`,
+                }}
+              >
                 <Img
-                  key={id}
                   fluid={fluid}
                   className="slider-img"
                 />
               </div>
             ))}
           </Slider>
-          <h2
+         {/* <h2
             style={{
               position: `fixed`,
               left: `20px`,
@@ -76,14 +86,14 @@ const Project = props => {
               left: `20px`,
               bottom: `20px`,
               fontSize: `12px`,
-              fontFamily: `relativebook`,
+              fontFamily: `ogg`,
               color: `#212121`,
               margin: `0`,
               fontWeight: `normal`,
             }}
           >
             {props.data.contentfulProject.location}
-          </h3>
+          </h3>*/}
         </div>
       </div>
     </Layout>

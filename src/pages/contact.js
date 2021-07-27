@@ -20,11 +20,9 @@ const Contact = () => (
       <div
         style={{
           position: `absolute`,
-          top: `0`,
-          left: `0`,
-          minHeight: `calc(100vh - 80px)`,
-          width: `25vw`,
-          background: `#ffffff`,
+          top: `50%`,
+          left: `calc(80px + (25vw - 60px))`,
+          transform: `translate(-50%,-50%)`,
         }}
       >
         <img 
@@ -33,7 +31,6 @@ const Contact = () => (
           style={{
             position: `relative`,
             top: `20px`,
-            left: `20px`,
             width: `175px`,
             margin: `0`,
           }}
@@ -41,29 +38,25 @@ const Contact = () => (
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(25vw - 40px)`,
             margin: `0`,
             marginTop: `30px`,
-            fontFamily: `relativebook`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
         >
           STUDIO ANTOINE<br/>
-          Alumnos 19, Casa 3.<br/>
+          Alumnos 19<br/>
           San Miguel Chapultepec<br/>
-          ll Secc. Miguel Hidalgo<br/>
+          II Secc. Miguel Hidalgo<br/>
           CDMX, 11850
         </p>
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(25vw - 40px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
-            fontFamily: `relativebook`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
@@ -87,11 +80,11 @@ const Contact = () => (
       <iframe
         style={{
           border: `none`,
-          width: `75vw`,
-          height: `calc(100vh - 80px)`,
+          width: `calc(50vw - 120px)`,
+          height: `calc(100vh - 240px)`,
           position: `fixed`,
-          top: `80px`,
-          right: `0`,
+          top: `160px`,
+          right: `80px`,
         }}
         loading="lazy"
         allowfullscreen

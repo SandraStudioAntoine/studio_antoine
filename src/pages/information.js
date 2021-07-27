@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import WordImg from "../images/wordmark.svg"
-import InfoImg from "../images/about-img.jpg"
+import InfoImg from "../images/about-img.png"
 
 const Information = () => (
   <Layout>
@@ -21,11 +21,10 @@ const Information = () => (
       <div
         style={{
           position: `absolute`,
-          top: `0`,
-          left: `0`,
-          minHeight: `calc(100vh - 80px)`,
-          width: `25vw`,
-          background: `#ffffff`,
+          top: `80px`,
+          left: `80px`,
+          minHeight: `calc(100vh - 240px)`,
+          width: `calc(50vw - 120px)`,
         }}
       >
         <img 
@@ -33,8 +32,8 @@ const Information = () => (
           alt="Studio Antoine Logo"
           style={{
             position: `relative`,
-            top: `20px`,
-            left: `20px`,
+            top: `0px`,
+            left: `0px`,
             width: `175px`,
             margin: `0`,
           }}
@@ -42,11 +41,11 @@ const Information = () => (
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(50vw - 40px)`,
+            left: `0px`,
+            width: `calc(50vw - 120px)`,
             margin: `0`,
             marginTop: `30px`,
-            fontFamily: `relativebook`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
@@ -56,11 +55,11 @@ const Information = () => (
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(50vw - 40px)`,
+            left: `0px`,
+            width: `calc(50vw - 120px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
-            fontFamily: `relativebook`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
@@ -70,11 +69,11 @@ const Information = () => (
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(50vw - 40px)`,
+            left: `0px`,
+            width: `calc(50vw - 120px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
-            fontFamily: `relativebook`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
@@ -84,11 +83,11 @@ const Information = () => (
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(50vw - 40px)`,
+            left: `0px`,
+            width: `calc(50vw - 120px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
-            fontFamily: `relativebook`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
@@ -98,11 +97,11 @@ const Information = () => (
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(50vw - 40px)`,
+            left: `0px`,
+            width: `calc(50vw - 120px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
-            fontFamily: `relativebook`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
@@ -112,11 +111,11 @@ const Information = () => (
         <p
           style={{
             position: `relative`,
-            left: `20px`,
-            width: `calc(50vw - 40px)`,
+            left: `0px`,
+            width: `calc(50vw - 120px)`,
             marginTop: `20px`,
-            marginBottom: `20px`,
-            fontFamily: `relativebook`,
+            marginBottom: `80px`,
+            fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
           }}
@@ -129,12 +128,12 @@ const Information = () => (
         alt="Information Image"
         style={{
           position: `fixed`,
-          top: `80px`,
-          right: `0`,
-          height: `calc(100vh - 80px)`,
-          width: `50vw`,
+          top: `160px`,
+          right: `80px`,
+          height: `calc(100vh - 240px)`,
+          width: `calc(50vw - 120px)`,
           objectFit: `cover`,
-          objectPosition: `0% 0%`,
+          objectPosition: `50% 0%`,
         }}
       />
     </div>

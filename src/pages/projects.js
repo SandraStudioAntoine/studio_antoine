@@ -102,7 +102,7 @@ const Projects = () => {
                       left: `20px`,
                       top: `calc(50% + 10px)`,
                       fontSize: `12px`,
-                      fontFamily: `relativebook`,
+                      fontFamily: `ogg`,
                       color: `#212121`,
                       margin: `0`,
                       fontWeight: `normal`,

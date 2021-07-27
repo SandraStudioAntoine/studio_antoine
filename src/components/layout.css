@@ -616,7 +616,7 @@ pre tt:after {
 }
 
 header ul {
-  font-family: 'relativebook';
+  font-family: 'ogg';
   list-style: none;
   font-size: 12px;
   line-height: 12px;
@@ -690,35 +690,28 @@ header ul li a {
 
 .slick-slider {
   width: 100vw;
-  height: calc(100vh - 120px);
-  margin-top: 20px;
+  height: calc(100vh - 80px);
 }
 
 .slick-track {
 
 }
 
-.img-wrapper, .slider-img {
-  position: relative;
-  height: calc(100vh - 120px);
-  width: calc(100vw - 120px);
-  margin-left: 10px;
+.slider-img {
+  height: 100%;
+  width: 100%;
 }
 
 .slider-img img {
   max-height: 100%;
   max-width: 100%;
-  position: absolute;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%,-50%);
-  object-fit: contain !important;
 }
 
 .slick-dots {
   position: fixed;
   bottom:  20px;
-  right: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   list-style: none;
   margin: 0;
 }
@@ -746,10 +739,10 @@ header ul li a {
   font-size: 0;
   color: transparent;
   cursor: pointer;
-  border: 1px solid #212121;
+  border: 1px solid #ffffff;
   border-radius: 5px;
 }
 
 .slick-dots li.slick-active button {
-  background: #212121;
+  background: #ffffff;
 }
