@@ -61,8 +61,6 @@ const Projects = () => {
                   style={{
                     position: `relative`,
                     float: `left`,
-                    height: `25vw`,
-                    width: `25vw`,
                     background: `#ffffff`,
                     margin: `0`,
                   }}
@@ -76,8 +74,6 @@ const Projects = () => {
                         position: `absolute`,
                         top: `0`,
                         right: `0`,
-                        height: `25vw`,
-                        width: `25vw`,
                         objectFit: `cover`,
                       }}
                     />
@@ -114,15 +110,8 @@ const Projects = () => {
               </Link>
             )
           })}
-        </div>
-        <div
-            style={{
-              position: `absolute`,
-              bottom: `0`,
-              right: `0`,
-              width: `50vw`,
-              height: `25vw`,
-            }}
+          <div
+            className="placeholder-wrapper"
           >
             <img 
               src={WordImg}
@@ -131,12 +120,13 @@ const Projects = () => {
                 position: `relative`,
                 top: `50%`,
                 left: `50%`,
-                width: `20vw`,
                 transform: `translate(-50%,-50%)`,
               }}
             />
           </div>
-      </div>
+          </div>
+          
+        </div>
     </Layout>
   )
 }

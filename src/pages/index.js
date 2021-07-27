@@ -52,12 +52,7 @@ const IndexPage = () => {
           >
           </video>
         </div>
-        <div
-          className="grid"
-          style={{
-            position: `relative`,
-          }}
-        >
+        <div className="grid">
           {data.allContentfulProject.edges.map(edge => {
             return (
               <Link
@@ -70,15 +65,12 @@ const IndexPage = () => {
                   margin: `0`,
                   padding: `0`,
                 }}
-                key={edge.node.id}
               >
                 <div
                   className="item"
                   style={{
                     position: `relative`,
                     float: `left`,
-                    height: `25vw`,
-                    width: `25vw`,
                     background: `#ffffff`,
                     margin: `0`,
                   }}
@@ -92,8 +84,6 @@ const IndexPage = () => {
                         position: `absolute`,
                         top: `0`,
                         right: `0`,
-                        height: `25vw`,
-                        width: `25vw`,
                         objectFit: `cover`,
                       }}
                     />
@@ -130,15 +120,8 @@ const IndexPage = () => {
               </Link>
             )
           })}
-        </div>
-        <div
-            style={{
-              position: `absolute`,
-              bottom: `0`,
-              right: `0`,
-              width: `50vw`,
-              height: `25vw`,
-            }}
+          <div
+            className="placeholder-wrapper"
           >
             <img 
               src={WordImg}
@@ -147,10 +130,10 @@ const IndexPage = () => {
                 position: `relative`,
                 top: `50%`,
                 left: `50%`,
-                width: `20vw`,
                 transform: `translate(-50%,-50%)`,
               }}
             />
+          </div>
           </div>
       </div>
     </Layout>

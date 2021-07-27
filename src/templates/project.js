@@ -33,7 +33,10 @@ const Project = props => {
     autoplay: true,
     variableWidth: true,
     centerMode: true,
+    draggable: true,
+    focusOnSelect: true,
     accessibility: true,
+    pauseOnHover: false,
   };
 
   return (
