@@ -68,17 +68,10 @@ const Header = ({ siteTitle }) => {
       />
     )}
     <Link to="/">
-      <img 
+      <img
+        className="header-logo"
         src={IconImg}
         alt="Studio Antoine Logo"
-        style={{
-          position: `absolute`,
-          top: `50%`,
-          left: `50%`,
-          transform: `translate(-50%,-50%)`,
-          height: `40px`,
-          cursor: `pointer`,
-        }}
       />
     </Link>
   </header>

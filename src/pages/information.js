@@ -9,24 +9,8 @@ import InfoImg from "../images/about-img.png"
 const Information = () => (
   <Layout>
     <Seo title="Information" />
-    <div
-      style={{
-        position: `absolute`,
-        top: `80px`,
-        left: `0`,
-        minHeight: `calc(100vh - 80px)`,
-        width: `100vw`,
-      }}
-    >
-      <div
-        style={{
-          position: `absolute`,
-          top: `80px`,
-          left: `160px`,
-          minHeight: `calc(100vh - 240px)`,
-          width: `calc(50vw - 240px)`,
-        }}
-      >
+    <div className="info-text">
+      <div className="info-content">
         <img 
           src={WordImg}
           alt="Studio Antoine Logo"
@@ -42,7 +26,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 240px)`,
+            width: `100%`,
             margin: `0`,
             marginTop: `30px`,
             fontFamily: `ogg`,
@@ -56,7 +40,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 240px)`,
+            width: `100%`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -70,7 +54,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 240px)`,
+            width: `100%`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -84,7 +68,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 240px)`,
+            width: `100%`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -98,7 +82,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 240px)`,
+            width: `100%`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -112,7 +96,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 240px)`,
+            width: `100%`,
             marginTop: `20px`,
             marginBottom: `80px`,
             fontFamily: `ogg`,
@@ -124,17 +108,9 @@ const Information = () => (
         </p>
       </div>
       <img 
+        className="info-img"
         src={InfoImg}
         alt="Information Image"
-        style={{
-          position: `fixed`,
-          top: `160px`,
-          right: `160px`,
-          height: `calc(100vh - 240px)`,
-          width: `calc(50vw - 240px)`,
-          objectFit: `cover`,
-          objectPosition: `50% 0%`,
-        }}
       />
     </div>
   </Layout>
