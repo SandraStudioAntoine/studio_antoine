@@ -794,9 +794,7 @@ header ul li a {
 
   .slider-img {
     height: auto;
-    width: auto;
-    background-color: red;
-  }
+    width: auto;  }
 
   .slider-img img {
     object-fit:  contain !important;
