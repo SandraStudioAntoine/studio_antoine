@@ -37,14 +37,20 @@ const Project = props => {
     focusOnSelect: true,
     accessibility: true,
     pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: "unslick",
+      }
+    ]
   };
 
   return (
     <Layout>
       <SEO title={props.data.contentfulProject.projectTitle} />
       <div
+        className="project-wrapper"
         style={{
-          position: `fixed`,
           top: `80px`,
           left: `0`,
           height: `calc(100vh - 80px)`,
