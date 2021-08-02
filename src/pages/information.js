@@ -21,10 +21,10 @@ const Information = () => (
       <div
         style={{
           position: `absolute`,
-          top: `20px`,
-          left: `20px`,
-          minHeight: `calc(100vh - 120px)`,
-          width: `calc(50vw - 30px)`,
+          top: `80px`,
+          left: `160px`,
+          minHeight: `calc(100vh - 240px)`,
+          width: `calc(50vw - 240px)`,
         }}
       >
         <img 
@@ -42,7 +42,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 30px)`,
+            width: `calc(50vw - 240px)`,
             margin: `0`,
             marginTop: `30px`,
             fontFamily: `ogg`,
@@ -56,7 +56,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 30px)`,
+            width: `calc(50vw - 240px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -70,7 +70,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 30px)`,
+            width: `calc(50vw - 240px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -84,7 +84,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 30px)`,
+            width: `calc(50vw - 240px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -98,7 +98,7 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 30px)`,
+            width: `calc(50vw - 240px)`,
             marginTop: `20px`,
             marginBottom: `20px`,
             fontFamily: `ogg`,
@@ -112,9 +112,9 @@ const Information = () => (
           style={{
             position: `relative`,
             left: `0px`,
-            width: `calc(50vw - 30px)`,
+            width: `calc(50vw - 240px)`,
             marginTop: `20px`,
-            marginBottom: `30px`,
+            marginBottom: `80px`,
             fontFamily: `ogg`,
             fontSize: `12px`,
             lineHeight: `18px`,
@@ -128,10 +128,10 @@ const Information = () => (
         alt="Information Image"
         style={{
           position: `fixed`,
-          top: `100px`,
-          right: `20px`,
-          height: `calc(100vh - 120px)`,
-          width: `calc(50vw - 30px)`,
+          top: `160px`,
+          right: `160px`,
+          height: `calc(100vh - 240px)`,
+          width: `calc(50vw - 240px)`,
           objectFit: `cover`,
           objectPosition: `50% 0%`,
         }}

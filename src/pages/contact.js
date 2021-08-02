@@ -344,23 +344,8 @@ const Contact = () => {
 
   <Layout>
     <Seo title="Contact" />
-    <div
-      style={{
-        position: `absolute`,
-        top: `80px`,
-        left: `0`,
-        minHeight: `calc(100vh - 80px)`,
-        width: `100vw`,
-      }}
-    >
-      <div
-        style={{
-          position: `absolute`,
-          top: `50%`,
-          left: `calc(20px + (25vw - 15px))`,
-          transform: `translate(-50%,-50%)`,
-        }}
-      >
+    <div className="contact-text">
+      <div className="contact-content">
         <img 
           src={WordImg}
           alt="Studio Antoine Logo"
@@ -414,17 +399,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div
-        className="mapGoogle"
-        style={{
-          border: `none`,
-          width: `calc(50vw - 30px)`,
-          height: `calc(100vh - 120px)`,
-          position: `fixed`,
-          top: `100px`,
-          right: `20px`,
-        }}
-      >
+      <div className="mapGoogle">
         <GoogleMapReact
           bootstrapURLKeys={{
             key: 'AIzaSyDi8Ijv1DcNQeOB9QoU-Lln_jot0CzdxJE',

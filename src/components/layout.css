@@ -843,3 +843,56 @@ header ul li a {
 .slick-dots li.slick-active button {
   background: #ffffff;
 }
+
+.mapGoogle {
+  position: fixed;
+  top: 160px;
+  right: 160px;
+  height: calc(100vh - 240px);
+  width: calc(50vw - 240px);
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+@media only screen and (max-width: 800px) {
+  .mapGoogle {
+    top: 80px;
+    right: 0px;
+    height: calc(50vh - 40px);
+    width: 100vw;
+  }
+}
+
+.contact-text {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  min-height: calc(100vh - 80px);
+  width: 100vw;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: calc(20px + (25vw - 15px));
+  transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-text {
+    position: fixed;
+    top: calc(50vh + 40px);
+    left: 0;
+    height: calc(50vh - 40px);
+    min-height: calc(50vh - 40px);
+    max-height: calc(50vh - 40px);
+    width: 100vw;
+  }
+
+  .contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
