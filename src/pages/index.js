@@ -11,17 +11,15 @@ const IndexPage = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allContentfulProject(sort: {fields: projectTitle, order: ASC}) {
-          edges {
-            node {
-              projectTitle
-              location
-              slug
-              id
-              featuredImage {
-                fluid {
-                  ...GatsbyContentfulFluid
-                }
+        contentfulProjectsSection {
+          projectOrder {
+            projectTitle
+            location
+            slug
+            id
+            featuredImage {
+              fluid {
+                ...GatsbyContentfulFluid
               }
             }
           }
@@ -53,11 +51,11 @@ const IndexPage = () => {
           </video>
         </div>
         <div className="grid">
-          {data.allContentfulProject.edges.map(edge => {
+          {data.contentfulProjectsSection.projectOrder.map(projectOrder => {
             return (
               <Link
                 className="item-link"
-                to={`/projects/${edge.node.slug}/`}
+                to={`/projects/${projectOrder.slug}/`}
                 style={{
                   position: `relative`,
                   height: `0`,
@@ -75,11 +73,11 @@ const IndexPage = () => {
                     margin: `0`,
                   }}
                 >
-                  {edge.node.featuredImage && (
+                  {projectOrder.featuredImage && (
                     <Img
                       className="featured"
-                      fluid={edge.node.featuredImage.fluid}
-                      alt={edge.node.title}
+                      fluid={projectOrder.featuredImage.fluid}
+                      alt={projectOrder.title}
                       style={{
                         position: `absolute`,
                         top: `0`,
@@ -100,7 +98,7 @@ const IndexPage = () => {
                       fontWeight: `normal`,
                     }}
                   >
-                    {edge.node.projectTitle}
+                    {projectOrder.projectTitle}
                   </h2>
                   <h3
                     style={{
@@ -114,7 +112,7 @@ const IndexPage = () => {
                       fontWeight: `normal`,
                     }}
                   >
-                    {edge.node.location}
+                    {projectOrder.location}
                   </h3>
                 </div>
               </Link>

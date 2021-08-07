@@ -712,11 +712,6 @@ header ul li a {
   opacity: 1;
 }
 
-
-.item-link:nth-of-type(even) {
-  display: none;
-}
-
 .placeholder-wrapper {
   position: absolute;
   width: 50vw;
