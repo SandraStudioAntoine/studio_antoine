@@ -19,12 +19,28 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allContentfulVideo {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
     }
   `)
   response.data.allContentfulProject.edges.forEach(edge => {
     createPage({
       path: `/projects/${edge.node.slug}`,
       component: path.resolve("./src/templates/project.js"),
+      context: {
+        slug: edge.node.slug,
+      },
+    })
+  })
+  response.data.allContentfulVideo.edges.forEach(edge => {
+    createPage({
+      path: `/archive/${edge.node.slug}`,
+      component: path.resolve("./src/templates/video.js"),
       context: {
         slug: edge.node.slug,
       },
