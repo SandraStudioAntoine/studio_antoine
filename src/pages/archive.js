@@ -94,7 +94,7 @@ const Archive = () => {
               </Link>
             )
           })}
-          <div
+{/*          <div
             className="placeholder-wrapper"
           >
             <img 
@@ -107,7 +107,7 @@ const Archive = () => {
                 transform: `translate(-50%,-50%)`,
               }}
             />
-          </div>
+          </div>*/}
           </div>
           
         </div>

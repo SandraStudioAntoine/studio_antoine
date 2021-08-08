@@ -49,6 +49,9 @@ const Header = ({ siteTitle }) => {
         <li>
           <Link to="/contact/">Contact</Link>
         </li>
+        <li>
+          <Link to="/archive/">Archive</Link>
+        </li>
       </ul>
     )}
 

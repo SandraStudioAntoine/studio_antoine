@@ -628,6 +628,13 @@ header ul {
   padding: 0;
 }
 
+@media only screen and (max-width: 500px) {
+  header ul {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
 header ul li {  
   display: inline-block;
   margin: 0;
