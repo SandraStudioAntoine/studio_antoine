@@ -405,7 +405,7 @@ const Contact = () => {
             key: 'AIzaSyDi8Ijv1DcNQeOB9QoU-Lln_jot0CzdxJE',
           }}
           center={[19.41504720565826, -99.18189340261033]}
-          zoom={16}
+          zoom={14}
           options={mapOptions}
           backgroundColor={'none'}
         >

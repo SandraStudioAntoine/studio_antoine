@@ -847,9 +847,9 @@ header ul li a {
 .mapGoogle {
   position: fixed;
   top: 160px;
-  right: 160px;
+  right: calc((100vw - (2 * (3/4 * (100vh - 240px))))/3);
   height: calc(100vh - 240px);
-  width: calc(50vw - 240px);
+  width: calc(3/4 * (100vh - 240px));
   object-fit: cover;
   object-position: 50% 0%;
 }
@@ -864,17 +864,17 @@ header ul li a {
 }
 
 .contact-text {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  min-height: calc(100vh - 80px);
-  width: 100vw;
+  position: fixed;
+  top: 160px;
+  left: calc((100vw - (2 * (3/4 * (100vh - 240px))))/3);
+  height: calc(100vh - 240px);
+  width: calc(3/4 * (100vh - 240px));
 }
 
 .contact-content {
   position: absolute;
   top: 50%;
-  left: calc(20px + (25vw - 15px));
+  left: 50%;
   transform: translate(-50%,-50%);
 }
 
@@ -900,9 +900,9 @@ header ul li a {
 .info-img {
   position: fixed;
   top: 160px;
-  right: 160px;
+  right: calc((100vw - (2 * (3/4 * (100vh - 240px))))/3);
   height: calc(100vh - 240px);
-  width: calc(50vw - 240px);
+  width: calc(3/4 * (100vh - 240px));
   object-fit: cover;
   object-position: 50% 0%;
 }
@@ -911,25 +911,29 @@ header ul li a {
   .info-img {
     top: 80px;
     right: 0px;
+    left: 0px;
     height: calc(50vh - 40px);
     width: 100vw;
   }
 }
 
 .info-text {
-  position: absolute;
-  top: 80px;
-  left: 0;
-  min-height: calc(100vh - 80px);
-  width: 100vw;
+  position: fixed;
+  top: 160px;
+  left: calc((100vw - (2 * (3/4 * (100vh - 240px))))/3);
+  height: calc(100vh - 160px);
+  width: calc(3/4 * (100vh - 240px));
+  object-fit: cover;
+  object-position: 50% 0%;
+  overflow-y: scroll;
 }
 
 .info-content {
   position: absolute;
-  top: 80px;
-  left: 160px;
-  min-height: calc(100vh - 240px);
-  width: calc(50vw - 240px);
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -937,6 +941,7 @@ header ul li a {
     position: absolute;
     top: calc(50vh + 80px);
     left: 0;
+    width: 100vw;
     min-height: calc(50vh - 80px);
   }
 
