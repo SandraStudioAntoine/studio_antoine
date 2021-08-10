@@ -13,7 +13,7 @@ export const query = graphql`
           url
         }
       }
-      youtubeId
+
     }
   }
 `
