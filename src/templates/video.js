@@ -42,6 +42,7 @@ const Video = props => {
               left: `0`,
               height: `calc(100vh - 80px)`,
               width: `100vw`,
+              backgroundColor: `#212121`,
             }}
           >
           </video>
