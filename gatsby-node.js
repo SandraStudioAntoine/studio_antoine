@@ -26,6 +26,13 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      allContentfulYt {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
     }
   `)
   response.data.allContentfulProject.edges.forEach(edge => {
@@ -41,6 +48,15 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `/things-we-love/${edge.node.slug}`,
       component: path.resolve("./src/templates/video.js"),
+      context: {
+        slug: edge.node.slug,
+      },
+    })
+  })
+  response.data.allContentfulYt.edges.forEach(edge => {
+    createPage({
+      path: `/things-we-love/${edge.node.slug}`,
+      component: path.resolve("./src/templates/yt.js"),
       context: {
         slug: edge.node.slug,
       },
