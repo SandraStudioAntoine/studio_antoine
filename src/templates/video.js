@@ -13,43 +13,48 @@ export const query = graphql`
           url
         }
       }
+      youtubeId
     }
   }
 `
 
 const Video = props => {
-  
-
-  return (
-    <Layout>
-      <SEO title={props.data.contentfulVideo.projectTitle} />
-      <div
-        className="project-wrapper"
-        style={{
-          top: `80px`,
-          left: `0`,
-          height: `calc(100vh - 80px)`,
-          width: `100vw`,
-        }}
-      >
-        <div className="content">
-          <video
-            className="archive-video"
-            src={props.data.contentfulVideo.video.file.url}
-            controls="true"
-            style={{
-              top: `80px`,
-              left: `0`,
-              height: `calc(100vh - 80px)`,
-              width: `100vw`,
-              backgroundColor: `#212121`,
-            }}
-          >
-          </video>
+  if (props.data.contentfulVideo.video) {
+    return (
+      <Layout>
+        <SEO title={props.data.contentfulVideo.projectTitle} />
+        <div
+          className="project-wrapper"
+          style={{
+            top: `80px`,
+            left: `0`,
+            height: `calc(100vh - 80px)`,
+            width: `100vw`,
+          }}
+        >
+          <div className="content">
+            
+              <video
+                className="archive-video"
+                src={props.data.contentfulVideo.video.file.url}
+                controls="true"
+                style={{
+                  top: `80px`,
+                  left: `0`,
+                  height: `calc(100vh - 80px)`,
+                  width: `100vw`,
+                  backgroundColor: `#212121`,
+                }}
+              >
+              </video>
+            
+          </div>
         </div>
-      </div>
-    </Layout>
-  )
+      </Layout>
+    )
+  }
+
+
 }
 
 export default Video
