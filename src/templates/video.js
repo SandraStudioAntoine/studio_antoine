@@ -19,7 +19,7 @@ export const query = graphql`
 `
 
 const Video = props => {
-  if (props.data.contentfulVideo.video) {
+  if (props.data.contentfulVideo.video.file) {
     return (
       <Layout>
         <SEO title={props.data.contentfulVideo.projectTitle} />
