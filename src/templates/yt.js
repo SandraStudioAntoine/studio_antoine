@@ -18,7 +18,7 @@ const Video = props => {
 
   return (
     <Layout>
-      <SEO title={props.data.contentfulYt.title} />
+      <SEO title={props.data.contentfulYt.projectTitle} />
       <div
         className="project-wrapper"
         style={{
