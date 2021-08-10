@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => {
           <Link to="/projects/">Projects</Link>
         </li>
         <li>
-          <Link to="/things-we-love/"><span className="twl-desktop">Things We Love</span><span className="twl-mobile">&#9829;</span></Link>
+          <Link to="/things-we-love/"><span className="twl-desktop">Things We Love</span><span className="twl-mobile">TLW</span></Link>
         </li>
         <li>
           <Link to="/information/">Information</Link>
