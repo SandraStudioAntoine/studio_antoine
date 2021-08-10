@@ -19,7 +19,7 @@ export const query = graphql`
 `
 
 const Video = props => {
-  if (typeof props.data.contentfulVideo.video.file.url !== 'undefined') {
+  if (typeof props.data.contentfulVideo.video !== 'undefined') {
     return (
       <Layout>
         <SEO title={props.data.contentfulVideo.projectTitle} />
