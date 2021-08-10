@@ -11,7 +11,7 @@ const Archive = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        contentfulVideoOrder {
+        contentfulVideoSection {
           videoOrder {
             projectTitle
             slug
@@ -40,7 +40,7 @@ const Archive = () => {
         }}
       >
         <div className="grid">
-          {data.contentfulVideoOrder.videoOrder.map(videoOrder => {
+          {data.contentfulVideoSection.videoOrder.map(videoOrder => {
             return (
               <Link
                 className="item-link"
@@ -81,7 +81,9 @@ const Archive = () => {
                       left: `20px`,
                       top: `50%`,
                       transform: `translateY(-50%)`,
+                      width: `calc(100% - 40px)`,
                       fontSize: `16px`,
+                      lineHeight: `20px`,
                       fontFamily: `ogg`,
                       color: `#212121`,
                       margin: `0`,
@@ -94,7 +96,7 @@ const Archive = () => {
               </Link>
             )
           })}
-{/*          <div
+          <div
             className="placeholder-wrapper"
           >
             <img 
@@ -107,7 +109,7 @@ const Archive = () => {
                 transform: `translate(-50%,-50%)`,
               }}
             />
-          </div>*/}
+          </div>
           </div>
           
         </div>
