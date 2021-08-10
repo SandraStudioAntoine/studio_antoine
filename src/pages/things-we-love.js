@@ -22,16 +22,6 @@ const Archive = () => {
               }
             }
           }
-          youtubeVideos {
-            projectTitle
-            slug
-            id
-            featuredImage {
-              fluid {
-                ...GatsbyContentfulFluid
-              }
-            }
-          }
         }
       }
     `
@@ -101,62 +91,6 @@ const Archive = () => {
                     }}
                   >
                     {videoOrder.projectTitle}
-                  </h2>
-                </div>
-              </Link>
-            )
-          })}
-          {data.contentfulVideoSection.youtubeVideos.map(youtubeVideos => {
-            return (
-              <Link
-                className="item-link"
-                to={`/things-we-love/${youtubeVideos.slug}/`}
-                style={{
-                  position: `relative`,
-                  height: `0`,
-                  width: `0`,
-                  margin: `0`,
-                  padding: `0`,
-                }}
-              >
-                <div
-                  className="item"
-                  style={{
-                    position: `relative`,
-                    float: `left`,
-                    background: `#ffffff`,
-                    margin: `0`,
-                  }}
-                >
-                  {youtubeVideos.featuredImage && (
-                    <Img
-                      className="featured"
-                      fluid={youtubeVideos.featuredImage.fluid}
-                      alt={youtubeVideos.title}
-                      style={{
-                        position: `absolute`,
-                        top: `0`,
-                        right: `0`,
-                        objectFit: `cover`,
-                      }}
-                    />
-                  )}
-                  <h2
-                    style={{
-                      position: `absolute`,
-                      left: `20px`,
-                      top: `50%`,
-                      transform: `translateY(-50%)`,
-                      width: `calc(100% - 40px)`,
-                      fontSize: `16px`,
-                      lineHeight: `20px`,
-                      fontFamily: `ogg`,
-                      color: `#212121`,
-                      margin: `0`,
-                      fontWeight: `normal`,
-                    }}
-                  >
-                    {youtubeVideos.projectTitle}
                   </h2>
                 </div>
               </Link>
