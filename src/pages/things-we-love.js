@@ -28,7 +28,7 @@ const Archive = () => {
   )
   return (
     <Layout>
-      <SEO title="Archive" />
+      <SEO title="Things We Love" />
       <div
         style={{
           position: `absolute`,
@@ -44,7 +44,7 @@ const Archive = () => {
             return (
               <Link
                 className="item-link"
-                to={`/archive/${videoOrder.slug}/`}
+                to={`/things-we-love/${videoOrder.slug}/`}
                 style={{
                   position: `relative`,
                   height: `0`,

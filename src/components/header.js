@@ -44,13 +44,13 @@ const Header = ({ siteTitle }) => {
           <Link to="/projects/">Projects</Link>
         </li>
         <li>
+          <Link to="/things-we-love/"><span className="twl-desktop">Things We Love</span><span className="twl-mobile">TLW</span></Link>
+        </li>
+        <li>
           <Link to="/information/">Information</Link>
         </li>
         <li>
           <Link to="/contact/">Contact</Link>
-        </li>
-        <li>
-          <Link to="/archive/">Archive</Link>
         </li>
       </ul>
     )}

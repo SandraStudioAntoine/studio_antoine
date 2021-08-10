@@ -649,6 +649,24 @@ header ul li a {
   padding: 0;
 }
 
+.twl-desktop {
+  display: block;
+}
+
+.twl-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .twl-desktop {
+    display: none;
+  }
+
+  .twl-mobile {
+    display: block;
+  }
+}
+
 .home-video-wrapper {
   position: relative;
   top: 0;
