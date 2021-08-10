@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 export const query = graphql`
   query($slug: String!) {
     contentfulYt(slug: { eq: $slug }) {
-      title
+      projectTitle
       ytId
     }
   }
