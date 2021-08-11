@@ -161,22 +161,7 @@ const Archive = () => {
               </Link>
             )
           })}
-          <div
-            className="placeholder-wrapper"
-          >
-            <img 
-              src={WordImg}
-              alt="Studio Antoine Logo"
-              style={{
-                position: `relative`,
-                top: `50%`,
-                left: `50%`,
-                transform: `translate(-50%,-50%)`,
-              }}
-            />
-          </div>
-          </div>
-          
+          </div>          
         </div>
     </Layout>
   )
