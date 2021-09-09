@@ -739,10 +739,10 @@ header ul li a {
 
 .placeholder-wrapper {
   position: absolute;
-  width: 50vw;
+  width: 25vw;
   height: 25vw;
   bottom: 0;
-  left: 50vw;
+  left: 75vw;
   background-color: #ffffff;
 }
 
@@ -922,7 +922,7 @@ header ul li a {
   height: calc(100vh - 240px);
   width: calc(3/4 * (100vh - 240px));
   object-fit: cover;
-  object-position: 50% 0%;
+  object-position: 50% 50%;
 }
 
 @media only screen and (max-width: 800px) {
