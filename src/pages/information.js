@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import WordImg from "../images/wordmark.svg"
-import InfoImg from "../images/about-img.png"
+import InfoImg from "../images/about-image-2.jpeg"
 
 const Information = () => (
   <Layout>
