@@ -112,7 +112,7 @@ const Information = () => (
     <img 
         className="info-img"
         src={InfoImg}
-        alt="Information Image"
+        alt="Antoine Image"
       />
   </Layout>
 )
