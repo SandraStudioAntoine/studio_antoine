@@ -107,11 +107,13 @@ const Information = () => (
           Working with Antoine Ratigan makes you understand how amazing Mexico is on the creative and artistic scene and will definitely put your project on the map to living something different and profound to the core.
         </p>
       </div>
+      <div className="info-img-wrapper">
       <img 
         className="info-img"
         src={InfoImg}
         alt="Information Image"
       />
+      </div>
     </div>
   </Layout>
 )
