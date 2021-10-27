@@ -382,13 +382,13 @@ const Contact = () => {
             lineHeight: `18px`,
           }}
         >
-          <a 
+{/*          <a 
             href="tel:+525519275069"
             style={{
               textDecoration: `none`,
               color: `#212121`,
             }}
-          >+52.55.1927.5069</a><br/>
+          >+52.55.1927.5069</a><br/>*/}
           <a
             href="mailto:hello@studioantoine.com"
             style={{
